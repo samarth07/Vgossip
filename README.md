@@ -5,16 +5,22 @@ gossip n make things dirty
 
 
 
-User
+Users
 ===
+
 
 Group
 ===
+Group Fields
+------------
+name:
+photo:
+description:
 
 Messages
 ===
 
 
-Event
+Events
 ===
 
