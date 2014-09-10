@@ -1,4 +1,35 @@
 Rails.application.routes.draw do
+
+  #application root path
+  root 'static#home'
+
+  #static pages roots starts here
+    get 'static/privacy_terms'
+    match 'privacy' => 'static#privacy_terms'
+
+    get 'static/jobs'
+    match 'jobs' => 'static#jobs'
+
+    get 'static/download'
+    match  'download' => 'static#download'
+
+    get 'static/faq'
+    match 'faq' => 'static#faq'
+
+    get 'static/home'
+    match 'home' => 'static#home'
+
+    get 'static/about'
+    match  'about' => 'static#about'
+
+    get 'static/contact'
+    match  'contact' => 'static#contact'
+
+    get 'static/how_it_works'
+    match 'how_it_works' => 'static#how_it_works'
+    
+  #static pages roots ends here
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
